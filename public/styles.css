@@ -1,0 +1,36 @@
+body {
+  background-color: grey;
+  font-family: Arial, sans-serif;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 540px);
+  grid-template-rows: repeat(3, 180px);
+  row-gap: 20px;
+  column-gap: 10px;
+  justify-content: center;
+}
+
+.grid-item {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ddd;
+  user-select: none;
+}
+
+.grid-item--highlight {
+  border: 2px dashed red;
+  opacity: 0.5;
+  background-color: grey;
+}
+
+.text {
+  margin: 20px;
+  font-weight: 600;
+}
+
+img {
+  height: 160px;
+}
